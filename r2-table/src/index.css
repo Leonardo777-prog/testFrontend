@@ -1,0 +1,60 @@
+:root {
+  --gris: #e1e1e1;
+  --colorprimario: #cad8e0;
+  --colorSecundario: #858e94;
+  --colorComplementario: #76947f;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--gris);
+}
+
+h1 {
+  text-align: center;
+}
+
+.contenedor {
+  width: min(1200px, 95%);
+  margin: 0 auto;
+}
+
+.contenedor-table {
+  display: block;
+  overflow-x: auto;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.table th {
+  background-color: var(--colorComplementario);
+  color: #f0f0f0;
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  border: 2px solid var(--gris);
+}
+.table tr {
+  color: #254050;
+}
+
+.table tr:nth-child(even) {
+  background-color: var(--colorprimario);
+}
