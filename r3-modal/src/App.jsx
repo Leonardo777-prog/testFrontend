@@ -4,7 +4,6 @@ import { useModal } from "./hook/useModal";
 import { info } from "./utils/infoCard";
 const App = () => {
   const { visible, handleChangeModal, Modal } = useModal();
-  console.log(visible);
   return (
     <>
       <h1>Ejercicio 2</h1>
