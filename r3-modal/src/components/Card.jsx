@@ -1,12 +1,12 @@
 import React from "react";
 
-export const Card = ({ urlImage, title, texto }) => {
+export const Card = ({ urlImage, title, texto, accion }) => {
   return (
     <div className="card">
       <div className="contenedor-imagen">
         <img src={urlImage} alt={title} loading="lazy" />
         <div className="contenedor-icono">
-          <div className="icono-play">
+          <div className="icono-play" onClick={() => accion()}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-player-play"
